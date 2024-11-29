@@ -25,7 +25,7 @@ const App = () => {
       try {
         const parser = new Parser();
         const response = await axios.get(
-          "https://<your-blog-name>.blogspot.com/feeds/posts/default?alt=rss"
+          "https://sobkiso-ltd.blogspot.com/feeds/posts/default?alt=rss"
         );
         const feed = await parser.parseString(response.data);
         const parsedPosts = feed.items.map((item, index) => ({
