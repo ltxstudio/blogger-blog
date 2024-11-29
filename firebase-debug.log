@@ -1,0 +1,111 @@
+[debug] [2024-11-29T11:10:47.841Z] ----------------------------------------------------------------------
+[debug] [2024-11-29T11:10:47.848Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hacker\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-11-29T11:10:47.849Z] CLI Version:   13.27.0
+[debug] [2024-11-29T11:10:47.850Z] Platform:      win32
+[debug] [2024-11-29T11:10:47.850Z] Node Version:  v20.16.0
+[debug] [2024-11-29T11:10:47.850Z] Time:          Fri Nov 29 2024 17:10:47 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-11-29T11:10:47.850Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-29T11:10:47.859Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-29T11:10:47.982Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-29T11:10:47.983Z] > authorizing via signed-in user (jvmjdk17@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hacker\Desktop\my-project
+
+[debug] [2024-11-29T11:10:50.444Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-29T11:10:50.445Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-11-29T11:11:55.394Z] Checked if tokens are valid: false, expires at: 1732807391804
+[debug] [2024-11-29T11:11:55.395Z] Checked if tokens are valid: false, expires at: 1732807391804
+[debug] [2024-11-29T11:11:55.395Z] > refreshing access token with scopes: []
+[debug] [2024-11-29T11:11:55.397Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-29T11:11:55.397Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-29T11:11:55.863Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-29T11:11:55.863Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-29T11:11:55.908Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-11-29T11:11:55.909Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"online-text-tool","name":"online-text-tool"}
+[debug] [2024-11-29T11:11:58.485Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-11-29T11:11:58.486Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6871887705854577558"}
+[debug] [2024-11-29T11:11:58.488Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:11:58.488Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:11:58.488Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 [none]
+[debug] [2024-11-29T11:12:00.608Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 200
+[debug] [2024-11-29T11:12:00.608Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 {"name":"operations/cp.6871887705854577558","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-11-29T11:12:01.122Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-11-29T11:12:01.122Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:01.122Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:01.123Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 [none]
+[debug] [2024-11-29T11:12:02.119Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 200
+[debug] [2024-11-29T11:12:02.119Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6871887705854577558 {"name":"operations/cp.6871887705854577558","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"781352118267","projectId":"online-text-tool","lifecycleState":"ACTIVE","name":"online-text-tool","createTime":"2024-11-29T11:11:38.312411Z"}}
+[debug] [2024-11-29T11:12:02.122Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:02.122Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:02.122Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/online-text-tool:addFirebase [none]
+[debug] [2024-11-29T11:12:06.953Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/online-text-tool:addFirebase 200
+[debug] [2024-11-29T11:12:06.953Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/online-text-tool:addFirebase {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh"}
+[debug] [2024-11-29T11:12:06.953Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:06.954Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:06.954Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh [none]
+[debug] [2024-11-29T11:12:08.345Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh 200
+[debug] [2024-11-29T11:12:08.345Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh"}
+[debug] [2024-11-29T11:12:08.860Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-11-29T11:12:08.860Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:08.860Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:08.861Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh [none]
+[debug] [2024-11-29T11:12:09.948Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh 200
+[debug] [2024-11-29T11:12:09.948Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh"}
+[debug] [2024-11-29T11:12:10.960Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-11-29T11:12:10.960Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:10.960Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:10.961Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh [none]
+[debug] [2024-11-29T11:12:11.924Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh 200
+[debug] [2024-11-29T11:12:11.924Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh"}
+[debug] [2024-11-29T11:12:13.927Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-11-29T11:12:13.927Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:13.927Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:13.927Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh [none]
+[debug] [2024-11-29T11:12:14.954Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh 200
+[debug] [2024-11-29T11:12:14.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh"}
+[debug] [2024-11-29T11:12:18.959Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-11-29T11:12:18.959Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:18.959Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:18.960Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh [none]
+[debug] [2024-11-29T11:12:20.495Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh 200
+[debug] [2024-11-29T11:12:20.495Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh {"name":"operations/workflows/ZWM4Zjg0YjAtNjk1Ny00Njc3LTg1ZjgtZWY2OTZiZjA0NzJh","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"online-text-tool","projectNumber":"781352118267","displayName":"online-text-tool","name":"projects/online-text-tool","resources":{"hostingSite":"online-text-tool"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: online-text-tool
+[info]    - Project Name: online-text-tool
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/online-text-tool/overview
+[info] i  Using project online-text-tool (online-text-tool) 
+[info] 
+=== Hosting Setup
+[debug] [2024-11-29T11:12:20.522Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:20.523Z] Checked if tokens are valid: true, expires at: 1732882314863
+[debug] [2024-11-29T11:12:20.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/online-text-tool [none]
+[debug] [2024-11-29T11:12:22.855Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/online-text-tool 200
+[debug] [2024-11-29T11:12:22.856Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/online-text-tool {"projectId":"online-text-tool","projectNumber":"781352118267","displayName":"online-text-tool","name":"projects/online-text-tool","resources":{"hostingSite":"online-text-tool"},"state":"ACTIVE","etag":"1_d62c7839-db33-419b-b30c-4b7c990b11f5"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-11-29T11:12:31.095Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
